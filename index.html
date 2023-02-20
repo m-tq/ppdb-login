@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portal Siswa</title>
+    <link rel="stylesheet" href="css/bootstrap-minimized.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Top Navbar  -->
+    <nav class="navbar bg-body-tertiary shadow-sm">
+        <div class="container">
+            <span class="navbar-brand px-2">Portal Siswa - My Schools</span>
+            <div id="toggleTheme" class="i-light mx-2"></div>
+        </div>
+    </nav>
+    <!-- End of Top Navbar -->
+
+    <!-- Main Content -->
+    <section id="main">
+        <div class="cotainer">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center mb-3">
+                    <img id="svglogin" src="/img/logind.svg" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <h3>Login</h3>
+                    </div>
+                    <form class="px-5 needs-validation" novalidate>
+                        <label for="nis" class="small text-muted">NIS *</label>
+                        <div class="input-group flex-nowrap mb-4">
+                            <span class="input-group-text text-secondary"><i class="i-nisn"></i></span>
+                            <input inputmode="numeric" pattern="[0-9]*" type="text" maxlength="4" id="nis" name="nis"
+                                class="form-control" aria-label="nis" required>
+                        </div>
+                        <label for="password" class="small text-muted">Password *</label>
+                        <div class="input-group flex-nowrap mb-3">
+                            <span class="input-group-text text-secondary"><i class="i-pass"></i></span>
+                            <input inputmode="text" type="password" id="password" name="password" class="form-control"
+                                aria-label="password" required>
+                        </div>
+                        <div class="text-center pt-3">
+                            <input type="submit" class="nav-btn"></input>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Main Content -->
+    <!-- Footer -->
+    <footer class="fixed-bottom py-2">
+        <div class="container">
+            <p class="text-secondary-emphasis text-center small mb-0">
+                &#169; 2023 My School</a>
+            </p>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
